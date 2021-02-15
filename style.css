@@ -1,0 +1,46 @@
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+    outline: none !important;
+}
+html, body {
+  background-color: rgb(220, 220, 220);
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+  font-family: sans-serif;
+}
+canvas {
+  display: block;
+  margin: 0px;
+}
+#canvasContainer {
+  background-color: rgb(220, 220, 220);
+  margin: 0px;
+  padding: 0px;
+}
+#buttonRow {
+  background-color: #f5f5f5;
+  padding: 2px;
+  display: inline-block;
+  width: calc(100% - 4px);
+  margin: 0px;
+}
+.button {
+  border: none;
+  background-color: #cad7ed;
+  user-select: none;
+  border-radius: 3px;
+  width: 50px;
+  height: 20px;
+  float: left;
+  padding: 2px;
+  margin: 2px;
+  transition: width 0.1s, background-color 0.2s;
+}
+.button:hover {
+  width: 55px;
+}
+.button[selected="true"] {
+  background-color: #b6c4db;
+}
